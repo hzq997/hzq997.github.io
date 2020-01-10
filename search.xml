@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客搭建常用插件</title>
-    <url>/posts/6159047b/</url>
-    <content><![CDATA[<blockquote>
-<p>本文只列举插件名称和相应功能作用，不涉及具体安装，详细教程点击插件即可跳转官方配置使用说明文档。</p>
-</blockquote>
+    <title>idea启动控制台中tomcat提示信息乱码问题</title>
+    <url>/posts/dbb513eb/</url>
+    <content><![CDATA[<p>解决办法:</p>
+<p>修改idea参数</p>
 <a id="more"></a>
 
-<ul>
-<li><a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a></li>
-</ul>
-<p>原生的Hexo博客生成的目录是:year/:month/:day/:title,这就使得我们的url中携带大量中文，有些人通过hexo new title使用英文的title，这  当然可行的，但是这不代表你的title就一定是唯一确定的，这也不方便日后对文章进行整理，也不方便我们推广，比如推广到百度站上，进行SEO是非常不方便的。而这一款插件就可以为我们的文章生一个固定不变而且唯一的地址，就算你修改文章的title，也不会对url发生变化的插件。<br>在<strong>博客配置文件</strong>里配置：<br><img src="2020-01-01-00-47-27.png" alt="相关配置"><br>效果：<br><img src="2020-01-01-00-48-32.png" alt="效果"><br>【<strong><em>注意</em></strong>】在使用了这个插件后，需要执行一次hexo clean &amp;&amp; hexo g，否则之前的博文可能会变为undefined，需要先clean一下。</p>
+<p>1.打开idea的安装目录</p>
+<p><img src="/images/2020-01-10-20-16-48.png" alt=""></p>
+<p>2.修改文件idea.exe.vmoptions或者idea64.exe.vmoptions文件</p>
+<p>3.在文件末尾加上一句:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-Dfile.encoding&#x3D;UTF-8</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/2020-01-10-20-33-24.png" alt=""></p>
+<p>4.重新启动即可.</p>
 ]]></content>
       <categories>
-        <category>hexo常用插件</category>
+        <category>bug</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>plugins</tag>
-        <tag>常用插件</tag>
+        <tag>bug</tag>
+        <tag>tomcat控制台乱码</tag>
+        <tag>idea</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>hello-world</title>
-    <url>/posts/b1d4025b/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
